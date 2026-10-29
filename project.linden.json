@@ -1,0 +1,416 @@
+{
+  "name": "MilkyWay",
+  "version": "0.1.0",
+  "tags": [
+    "Player",
+    "Enemy",
+    "Pickup",
+    "Coin",
+    "Ground",
+    "Flying"
+  ],
+  "layers": [
+    "Default",
+    "TransparentFX",
+    "Ignore Raycast",
+    "",
+    "Water",
+    "UI",
+    "Player",
+    "Enemy"
+  ],
+  "collisionMatrix": [
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  ],
+  "input": {
+    "actions": [
+      {
+        "name": "Jump",
+        "type": "button",
+        "bindings": [
+          "Keyboard/Space",
+          "Gamepad/ButtonSouth"
+        ]
+      },
+      {
+        "name": "Move",
+        "type": "vector2",
+        "composite": {
+          "up": "Keyboard/KeyW",
+          "down": "Keyboard/KeyS",
+          "left": "Keyboard/KeyA",
+          "right": "Keyboard/KeyD"
+        },
+        "bindings": [
+          "Gamepad/LeftStick"
+        ],
+        "deadzone": 0.2
+      }
+    ]
+  },
+  "services": [],
+  "scenesInBuild": [
+    "scenes/Main.lscene"
+  ],
+  "exportPresets": [
+    {
+      "id": "preset-windows-desktop",
+      "name": "Windows Desktop",
+      "platform": "windows",
+      "backend": "linden",
+      "arch": [
+        "x64"
+      ],
+      "output": "build/windows/MilkyWay.exe",
+      "mode": "release",
+      "appName": "MilkyWay"
+    },
+    {
+      "id": "preset-macos-desktop",
+      "name": "macOS",
+      "platform": "macos",
+      "backend": "linden",
+      "arch": [
+        "universal"
+      ],
+      "output": "build/mac/MilkyWay.dmg",
+      "mode": "release",
+      "appName": "MilkyWay"
+    },
+    {
+      "id": "preset-linux-desktop",
+      "name": "Linux",
+      "platform": "linux",
+      "backend": "linden",
+      "arch": [
+        "x64"
+      ],
+      "output": "build/linux/MilkyWay.AppImage",
+      "mode": "release",
+      "appName": "MilkyWay"
+    },
+    {
+      "id": "preset-web-html5",
+      "name": "Web",
+      "platform": "web",
+      "backend": "linden",
+      "arch": [
+        "wasm"
+      ],
+      "output": "build/web/index.html",
+      "mode": "release",
+      "appName": "MilkyWay"
+    },
+    {
+      "id": "preset-android",
+      "name": "Android",
+      "platform": "android",
+      "backend": "godot",
+      "arch": [
+        "arm64"
+      ],
+      "output": "build/android/MilkyWay.apk",
+      "mode": "debug",
+      "appName": "MilkyWay"
+    },
+    {
+      "id": "preset-ios",
+      "name": "iOS",
+      "platform": "ios",
+      "backend": "godot",
+      "arch": [
+        "arm64"
+      ],
+      "output": "build/ios/MilkyWay.ipa",
+      "mode": "debug",
+      "appName": "MilkyWay"
+    }
+  ]
+}
